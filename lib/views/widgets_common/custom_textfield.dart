@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_emart_app/consts/consts.dart';
+import '../../consts/consts.dart';
 
 Widget customTextField({String? title, String? value, controller}) {
   return Column(

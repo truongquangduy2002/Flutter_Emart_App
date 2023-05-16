@@ -22,3 +22,12 @@ const home = "Home",
     categories = "Categories",
     cart = "Cart",
     account = "Account";
+
+//Home screen strings
+const searchanything = "Search anything..",
+    todayDeal = "Today's deal",
+    flashsale = "Flash Sale",
+    topSeller = "Top Sellers",
+    brand = "Brand",
+    topCategory = "Top Categories",
+    featureCategories = "Feature Categories";

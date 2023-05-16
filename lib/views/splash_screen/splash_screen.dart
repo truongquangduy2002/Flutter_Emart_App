@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_emart_app/consts/colors.dart';
 import 'package:flutter_emart_app/consts/consts.dart';
-import 'package:flutter_emart_app/widgets_common/applogo_widget.dart';
+import 'package:flutter_emart_app/views/widgets_common/applogo_widget.dart';
 import 'package:get/get.dart';
 
-import '../../auth_screen/login_screen.dart';
+import '../auth_screen/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

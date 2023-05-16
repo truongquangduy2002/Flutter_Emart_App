@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_emart_app/consts/consts.dart';
 import 'package:get/get.dart';
 
-import '../consts/lists.dart';
 import '../widgets_common/applogo_widget.dart';
 import '../widgets_common/bg_widget.dart';
 import '../widgets_common/custom_textfield.dart';
