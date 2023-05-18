@@ -67,6 +67,65 @@ class HomeScreen extends StatelessWidget {
                         title: index == 0 ? todayDeal : flashsale,
                       )),
             ),
+
+            //2nd swiper
+            10.heightBox,
+
+            //Swipers brands
+            VxSwiper.builder(
+              aspectRatio: 16 / 9,
+              autoPlay: true,
+              height: 150,
+              enlargeCenterPage: true,
+              itemCount: secondSlidersList.length,
+              itemBuilder: (context, index) {
+                return Container(
+                  child: Image.asset(
+                    secondSlidersList[index],
+                    fit: BoxFit.fill,
+                  )
+                      .box
+                      .rounded
+                      .clip(Clip.antiAlias)
+                      .margin(EdgeInsets.symmetric(horizontal: 8))
+                      .make(),
+                );
+              },
+            ),
+
+            10.heightBox,
+
+            //Category buttons
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: List.generate(
+                  3,
+                  (index) => homeButtons(
+                        height: context.screenHeight * 0.15,
+                        width: context.screenWidth / 3.5,
+                        icon: index == 0
+                            ? icTopCategories
+                            : index == 1
+                                ? icBrands
+                                : icTopSeller,
+                        title: index == 0
+                            ? topCategory
+                            : index == 1
+                                ? brand
+                                : topSeller,
+                      )),
+            ),
+
+            //Featured categories
+            10.heightBox,
+            Align(
+              alignment: Alignment.centerLeft,
+              child: featureCategories.text
+                  .color(darkFontGrey)
+                  .size(18)
+                  .fontFamily(semibold)
+                  .make(),
+            ),
           ],
         ),
       ),

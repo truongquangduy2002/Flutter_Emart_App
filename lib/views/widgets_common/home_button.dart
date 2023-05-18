@@ -3,16 +3,16 @@ import 'package:flutter_emart_app/consts/consts.dart';
 
 import '../../consts/images.dart';
 
-Widget homeButtons({width, height, icon, title, onPress}) {
+Widget homeButtons({width, height, icon, String? title, onPress}) {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Image.asset(
-        icTodaysDeal,
+        icon,
         width: 26,
       ),
-      5.heightBox,
-      todayDeal.text.fontFamily(semibold).color(darkFontGrey).make(),
+      10.heightBox,
+      title!.text.fontFamily(semibold).color(darkFontGrey).make(),
     ],
   ).box.rounded.white.size(width, height).make();
 }
