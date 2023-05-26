@@ -24,7 +24,15 @@ class ItemDetail extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(),
+      body: Container(
+        child: Column(
+          children: [
+            AppBar(
+              title: Text('Hello World'),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
