@@ -28,7 +28,7 @@ class ItemDetail extends StatelessWidget {
         child: Column(
           children: [
             AppBar(
-              title: Text('Hello World'),
+              title: Text('Hello World News 2'),
             )
           ],
         ),
